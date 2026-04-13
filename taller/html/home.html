@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabores del Barrio</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>🍔 Sabores del Barrio</h1>
+        <p>Las mejores comidas rápidas con sabor casero</p>
+        <a href="#menu" class="btn-principal">Ver Menú</a>
+    </div>
+</header>
+
+<section class="info">
+    <h2>Bienvenidos</h2>
+    <p>
+        En <strong>Sabores del Barrio</strong> preparamos cada plato con ingredientes frescos,
+        porciones generosas y mucho sabor. Disfruta hamburguesas, pizzas, hotdogs y más.
+    </p>
+</section>
+
+<section id="menu">
+    <h2 class="titulo-menu">🍟 Nuestro Menú</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <img src="../img/hamburguesa.jpg" alt="Hamburguesa">
+            <h3>Hamburguesa Clásica</h3>
+            <p>Pan artesanal, carne 100% res, queso cheddar, lechuga y papas fritas.</p>
+            <span class="precio">$5.99</span>
+            <button onclick="agregarCarrito('Hamburguesa Clásica')">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/salchipapa.jpg" alt="Salchipapa">
+            <h3>Salchipapa Especial</h3>
+            <p>Papas crocantes con salchichas, salsas especiales y queso rallado.</p>
+            <span class="precio">$4.50</span>
+            <button onclick="agregarCarrito('Salchipapa Especial')">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/hotdog.jpg" alt="Hotdog">
+            <h3>Hotdog Supremo</h3>
+            <p>Salchicha premium, cebolla caramelizada, mostaza y papitas trituradas.</p>
+            <span class="precio">$3.99</span>
+            <button onclick="agregarCarrito('Hotdog Supremo')">Agregar</button>
+        </div>
+
+        <div class="card">
+            <img src="../img/pizza.jpg" alt="Pizza">
+            <h3>Pizza Familiar</h3>
+            <p>Masa crujiente, salsa italiana, queso mozzarella y pepperoni.</p>
+            <span class="precio">$8.99</span>
+            <button onclick="agregarCarrito('Pizza Familiar')">Agregar</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="promocion">
+    <h2>
+        <img src="../img/fuego.png" alt="Oferta" class="icono">
+        Promo del Día
+    </h2>
+
+    <p>
+        <img src="../img/burger.png" alt="Hamburguesa" class="icono">
+        Compra una hamburguesa y llévate una bebida gratis.
+    </p>
+</section>
+
+<div id="carrito">
+    <h3>
+        <img src="../img/carrito.png" alt="Carrito" class="icono">
+        Carrito
+    </h3>
+
+    <ul id="lista"></ul>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+</div>
+
+<footer>
+    <p>
+        <img src="../img/ubicacion.png" alt="Ubicación" class="icono">
+        Calle Principal #123 - Tu Ciudad
+    </p>
+
+    <p>
+        <img src="../img/telefono.png" alt="Teléfono" class="icono">
+        099 999 9999
+    </p>
+
+    <p>© 2026 Sabores del Barrio</p>
+</footer>
+
+<script src="../js/js.js"></script>
+</body>
+</html>
